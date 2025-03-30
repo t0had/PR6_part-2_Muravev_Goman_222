@@ -1,0 +1,54 @@
+C:\Users\227088\source\repos\TravelAgency\UnitTestProject\bin\Debug\ru\Microsoft.TestPlatform.AdapterUtilities.resources.dll
+C:\Users\227088\source\repos\TravelAgency\UnitTestProject\bin\Debug\ru\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\227088\source\repos\TravelAgency\UnitTestProject\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\227088\source\repos\TravelAgency\UnitTestProject\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\Users\227088\source\repos\TravelAgency\UnitTestProject\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\227088\source\repos\TravelAgency\UnitTestProject\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\227088\source\repos\TravelAgency\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\227088\source\repos\TravelAgency\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\227088\source\repos\TravelAgency\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\227088\source\repos\TravelAgency\UnitTestProject\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
+C:\Users\227088\source\repos\TravelAgency\UnitTestProject\bin\Debug\UnitTestProject.dll
+C:\Users\227088\source\repos\TravelAgency\UnitTestProject\bin\Debug\UnitTestProject.pdb
+C:\Users\227088\source\repos\TravelAgency\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\227088\source\repos\TravelAgency\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\227088\source\repos\TravelAgency\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\227088\source\repos\TravelAgency\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\227088\source\repos\TravelAgency\UnitTestProject\obj\Debug\UnitTestProject.csproj.AssemblyReference.cache
+C:\Users\227088\source\repos\TravelAgency\UnitTestProject\obj\Debug\UnitTestProject.csproj.CoreCompileInputs.cache
+C:\Users\227088\source\repos\TravelAgency\UnitTestProject\obj\Debug\UnitTest.294DD5B1.Up2Date
+C:\Users\227088\source\repos\TravelAgency\UnitTestProject\obj\Debug\UnitTestProject.dll
+C:\Users\227088\source\repos\TravelAgency\UnitTestProject\obj\Debug\UnitTestProject.pdb
+C:\Users\egorm\Desktop\Test\UnitTestProject\obj\Debug\UnitTestProject.csproj.AssemblyReference.cache
+C:\Users\egorm\Desktop\Test\UnitTestProject\obj\Debug\UnitTestProject.csproj.CoreCompileInputs.cache
+C:\Users\egorm\Desktop\Test\UnitTestProject\obj\Debug\UnitTestProject.dll
+C:\Users\egorm\Desktop\Test\UnitTestProject\obj\Debug\UnitTestProject.pdb
+C:\Users\Anton\Desktop\Test (2)\Test\UnitTestProject\obj\Debug\UnitTestProject.csproj.AssemblyReference.cache
+C:\Users\Anton\Desktop\Test (2)\Test\UnitTestProject\obj\Debug\UnitTestProject.csproj.CoreCompileInputs.cache
+C:\Users\Anton\Desktop\Test (2)\Test\UnitTestProject\obj\Debug\UnitTestProject.dll
+C:\Users\Anton\Desktop\Test (2)\Test\UnitTestProject\obj\Debug\UnitTestProject.pdb
+C:\Users\Anton\Desktop\Test (2)\Test\UnitTestProject\bin\Debug\ru\Microsoft.TestPlatform.AdapterUtilities.resources.dll
+C:\Users\Anton\Desktop\Test (2)\Test\UnitTestProject\bin\Debug\ru\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\Anton\Desktop\Test (2)\Test\UnitTestProject\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\Anton\Desktop\Test (2)\Test\UnitTestProject\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\Users\Anton\Desktop\Test (2)\Test\UnitTestProject\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\Anton\Desktop\Test (2)\Test\UnitTestProject\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\Anton\Desktop\Test (2)\Test\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Anton\Desktop\Test (2)\Test\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Anton\Desktop\Test (2)\Test\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Anton\Desktop\Test (2)\Test\UnitTestProject\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
+C:\Users\Anton\Desktop\Test (2)\Test\UnitTestProject\bin\Debug\UnitTestProject.dll.config
+C:\Users\Anton\Desktop\Test (2)\Test\UnitTestProject\bin\Debug\UnitTestProject.dll
+C:\Users\Anton\Desktop\Test (2)\Test\UnitTestProject\bin\Debug\UnitTestProject.pdb
+C:\Users\Anton\Desktop\Test (2)\Test\UnitTestProject\bin\Debug\EntityFramework.dll
+C:\Users\Anton\Desktop\Test (2)\Test\UnitTestProject\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Anton\Desktop\Test (2)\Test\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Anton\Desktop\Test (2)\Test\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Anton\Desktop\Test (2)\Test\UnitTestProject\bin\Debug\TravelAgency.exe
+C:\Users\Anton\Desktop\Test (2)\Test\UnitTestProject\bin\Debug\TravelAgency.pdb
+C:\Users\Anton\Desktop\Test (2)\Test\UnitTestProject\bin\Debug\TravelAgency.exe.config
+C:\Users\Anton\Desktop\Test (2)\Test\UnitTestProject\bin\Debug\EntityFramework.xml
+C:\Users\Anton\Desktop\Test (2)\Test\UnitTestProject\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Anton\Desktop\Test (2)\Test\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Anton\Desktop\Test (2)\Test\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Anton\Desktop\Test (2)\Test\UnitTestProject\obj\Debug\UnitTest.294DD5B1.Up2Date

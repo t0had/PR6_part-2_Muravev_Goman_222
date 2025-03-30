@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище TravelAgencyModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Bookings">
+    <Key>
+      <PropertyRef Name="BookingID" />
+    </Key>
+    <Property Name="BookingID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CustomerID" Type="int" />
+    <Property Name="TourID" Type="int" />
+    <Property Name="ManagerID" Type="int" />
+    <Property Name="BookingDate" Type="date" Nullable="false" />
+    <Property Name="SeatsBooked" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Customers">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+    </Key>
+    <Property Name="CustomerID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Phone" Type="varchar" MaxLength="20" />
+    <Property Name="DateOfBirth" Type="date" />
+    <Property Name="PassportNumber" Type="varchar" MaxLength="10" />
+    <Property Name="Address" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Excursions">
+    <Key>
+      <PropertyRef Name="ExcursionID" />
+    </Key>
+    <Property Name="ExcursionID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ExcursionName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Duration" Type="int" Nullable="false" />
+    <Property Name="Price" Type="decimal" Precision="10" Scale="2" />
+  </EntityType>
+  <EntityType Name="Managers">
+    <Key>
+      <PropertyRef Name="ManagerID" />
+    </Key>
+    <Property Name="ManagerID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Phone" Type="varchar" MaxLength="20" />
+    <Property Name="UserAuthID" Type="int" />
+  </EntityType>
+  <EntityType Name="Payments">
+    <Key>
+      <PropertyRef Name="PaymentID" />
+    </Key>
+    <Property Name="PaymentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BookingID" Type="int" />
+    <Property Name="PaymentDate" Type="date" Nullable="false" />
+    <Property Name="Amount" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="PaymentMethod" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Services">
+    <Key>
+      <PropertyRef Name="ServiceID" />
+    </Key>
+    <Property Name="ServiceID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ServiceName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Description" Type="text" />
+    <Property Name="Price" Type="decimal" Precision="10" Scale="2" />
+  </EntityType>
+  <EntityType Name="Tour_Excursions">
+    <Key>
+      <PropertyRef Name="TourID" />
+      <PropertyRef Name="ExcursionID" />
+    </Key>
+    <Property Name="TourID" Type="int" Nullable="false" />
+    <Property Name="ExcursionID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tour_Guides">
+    <Key>
+      <PropertyRef Name="GuideID" />
+    </Key>
+    <Property Name="GuideID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Phone" Type="varchar" MaxLength="20" />
+    <Property Name="Language" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Tour_Services">
+    <Key>
+      <PropertyRef Name="TourID" />
+      <PropertyRef Name="ServiceID" />
+    </Key>
+    <Property Name="TourID" Type="int" Nullable="false" />
+    <Property Name="ServiceID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tours">
+    <Key>
+      <PropertyRef Name="TourID" />
+    </Key>
+    <Property Name="TourID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TourName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="StartDate" Type="date" Nullable="false" />
+    <Property Name="EndDate" Type="date" Nullable="false" />
+    <Property Name="Price" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="AvailableSeats" Type="int" Nullable="false" />
+    <Property Name="GuideID" Type="int" />
+  </EntityType>
+  <EntityType Name="UserAuth">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Username" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Role" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Phone" Type="varchar" MaxLength="20" />
+    <Property Name="Email" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Bookings__Custom__628FA481">
+    <End Role="Customers" Type="Self.Customers" Multiplicity="0..1" />
+    <End Role="Bookings" Type="Self.Bookings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customers">
+        <PropertyRef Name="CustomerID" />
+      </Principal>
+      <Dependent Role="Bookings">
+        <PropertyRef Name="CustomerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Bookings__Manage__6477ECF3">
+    <End Role="Managers" Type="Self.Managers" Multiplicity="0..1" />
+    <End Role="Bookings" Type="Self.Bookings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Managers">
+        <PropertyRef Name="ManagerID" />
+      </Principal>
+      <Dependent Role="Bookings">
+        <PropertyRef Name="ManagerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Bookings__TourID__6383C8BA">
+    <End Role="Tours" Type="Self.Tours" Multiplicity="0..1" />
+    <End Role="Bookings" Type="Self.Bookings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tours">
+        <PropertyRef Name="TourID" />
+      </Principal>
+      <Dependent Role="Bookings">
+        <PropertyRef Name="TourID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Payments__Bookin__66603565">
+    <End Role="Bookings" Type="Self.Bookings" Multiplicity="0..1" />
+    <End Role="Payments" Type="Self.Payments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Bookings">
+        <PropertyRef Name="BookingID" />
+      </Principal>
+      <Dependent Role="Payments">
+        <PropertyRef Name="BookingID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Tour_Excu__Excur__68487DD7">
+    <End Role="Excursions" Type="Self.Excursions" Multiplicity="1" />
+    <End Role="Tour_Excursions" Type="Self.Tour_Excursions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Excursions">
+        <PropertyRef Name="ExcursionID" />
+      </Principal>
+      <Dependent Role="Tour_Excursions">
+        <PropertyRef Name="ExcursionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Tour_Excu__TourI__6754599E">
+    <End Role="Tours" Type="Self.Tours" Multiplicity="1" />
+    <End Role="Tour_Excursions" Type="Self.Tour_Excursions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tours">
+        <PropertyRef Name="TourID" />
+      </Principal>
+      <Dependent Role="Tour_Excursions">
+        <PropertyRef Name="TourID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Tour_Serv__Servi__6A30C649">
+    <End Role="Services" Type="Self.Services" Multiplicity="1" />
+    <End Role="Tour_Services" Type="Self.Tour_Services" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Services">
+        <PropertyRef Name="ServiceID" />
+      </Principal>
+      <Dependent Role="Tour_Services">
+        <PropertyRef Name="ServiceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Tour_Serv__TourI__693CA210">
+    <End Role="Tours" Type="Self.Tours" Multiplicity="1" />
+    <End Role="Tour_Services" Type="Self.Tour_Services" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tours">
+        <PropertyRef Name="TourID" />
+      </Principal>
+      <Dependent Role="Tour_Services">
+        <PropertyRef Name="TourID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Tours__GuideID__6B24EA82">
+    <End Role="Tour_Guides" Type="Self.Tour_Guides" Multiplicity="0..1" />
+    <End Role="Tours" Type="Self.Tours" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tour_Guides">
+        <PropertyRef Name="GuideID" />
+      </Principal>
+      <Dependent Role="Tours">
+        <PropertyRef Name="GuideID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Managers_UserAuth">
+    <End Role="UserAuth" Type="Self.UserAuth" Multiplicity="0..1" />
+    <End Role="Managers" Type="Self.Managers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserAuth">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="Managers">
+        <PropertyRef Name="UserAuthID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище TravelAgencyModelContainer">
+    <EntitySet Name="Bookings" EntityType="Self.Bookings" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Customers" EntityType="Self.Customers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Excursions" EntityType="Self.Excursions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Managers" EntityType="Self.Managers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Payments" EntityType="Self.Payments" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Services" EntityType="Self.Services" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tour_Excursions" EntityType="Self.Tour_Excursions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tour_Guides" EntityType="Self.Tour_Guides" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tour_Services" EntityType="Self.Tour_Services" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tours" EntityType="Self.Tours" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserAuth" EntityType="Self.UserAuth" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Bookings__Custom__628FA481" Association="Self.FK__Bookings__Custom__628FA481">
+      <End Role="Customers" EntitySet="Customers" />
+      <End Role="Bookings" EntitySet="Bookings" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Bookings__Manage__6477ECF3" Association="Self.FK__Bookings__Manage__6477ECF3">
+      <End Role="Managers" EntitySet="Managers" />
+      <End Role="Bookings" EntitySet="Bookings" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Bookings__TourID__6383C8BA" Association="Self.FK__Bookings__TourID__6383C8BA">
+      <End Role="Tours" EntitySet="Tours" />
+      <End Role="Bookings" EntitySet="Bookings" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Payments__Bookin__66603565" Association="Self.FK__Payments__Bookin__66603565">
+      <End Role="Bookings" EntitySet="Bookings" />
+      <End Role="Payments" EntitySet="Payments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Tour_Excu__Excur__68487DD7" Association="Self.FK__Tour_Excu__Excur__68487DD7">
+      <End Role="Excursions" EntitySet="Excursions" />
+      <End Role="Tour_Excursions" EntitySet="Tour_Excursions" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Tour_Excu__TourI__6754599E" Association="Self.FK__Tour_Excu__TourI__6754599E">
+      <End Role="Tours" EntitySet="Tours" />
+      <End Role="Tour_Excursions" EntitySet="Tour_Excursions" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Tour_Serv__Servi__6A30C649" Association="Self.FK__Tour_Serv__Servi__6A30C649">
+      <End Role="Services" EntitySet="Services" />
+      <End Role="Tour_Services" EntitySet="Tour_Services" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Tour_Serv__TourI__693CA210" Association="Self.FK__Tour_Serv__TourI__693CA210">
+      <End Role="Tours" EntitySet="Tours" />
+      <End Role="Tour_Services" EntitySet="Tour_Services" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Tours__GuideID__6B24EA82" Association="Self.FK__Tours__GuideID__6B24EA82">
+      <End Role="Tour_Guides" EntitySet="Tour_Guides" />
+      <End Role="Tours" EntitySet="Tours" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Managers_UserAuth" Association="Self.FK_Managers_UserAuth">
+      <End Role="UserAuth" EntitySet="UserAuth" />
+      <End Role="Managers" EntitySet="Managers" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

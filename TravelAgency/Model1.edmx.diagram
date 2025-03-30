@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="15aa756e22284d6cbf3c38f8b1ac4e26" Name="Diagram1">
+        <EntityTypeShape EntityType="TravelAgencyModel.Bookings" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TravelAgencyModel.Customers" Width="1.5" PointX="3" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="TravelAgencyModel.Excursions" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TravelAgencyModel.Managers" Width="1.5" PointX="3" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TravelAgencyModel.Payments" Width="1.5" PointX="7.5" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TravelAgencyModel.Services" Width="1.5" PointX="0.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TravelAgencyModel.Tour_Guides" Width="1.5" PointX="0.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="TravelAgencyModel.Tours" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="TravelAgencyModel.UserAuth" Width="1.5" PointX="0.75" PointY="11.5" IsExpanded="true" />
+        <AssociationConnector Association="TravelAgencyModel.FK__Bookings__Custom__628FA481" ManuallyRouted="false" />
+        <AssociationConnector Association="TravelAgencyModel.FK__Bookings__Manage__6477ECF3" ManuallyRouted="false" />
+        <AssociationConnector Association="TravelAgencyModel.FK__Bookings__TourID__6383C8BA" ManuallyRouted="false" />
+        <AssociationConnector Association="TravelAgencyModel.FK__Payments__Bookin__66603565" ManuallyRouted="false" />
+        <AssociationConnector Association="TravelAgencyModel.FK_Managers_UserAuth" ManuallyRouted="false" />
+        <AssociationConnector Association="TravelAgencyModel.FK__Tours__GuideID__6B24EA82" ManuallyRouted="false" />
+        <AssociationConnector Association="TravelAgencyModel.Tour_Excursions" ManuallyRouted="false" />
+        <AssociationConnector Association="TravelAgencyModel.Tour_Services" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
